@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link href="./../styles/styles4.css" rel="stylesheet">
+</head>
+<body>
+<header></header>
+<main>
+    <div id="d1" class="first">
+    </div>
+    <div id="d2" class="first">
+    </div>
+    <div id="d3" class="second">
+    </div>
+    <div id="d4" class="first">
+    </div>
+    <div id="d5" class="second">
+    </div>
+    <div id="d6" class="second">
+    </div>
+
+    <p id="p1">
+        Родительский параграф с id p1
+        <span>В котором лежит текст, обернутый в Span и является потомком родительскому элементу p с id p1</span>
+    </p>
+
+    <ul>
+        <li>
+            Список первого уровня (Дочерний селектор) с измененным стилем
+            <ul>
+                <li>Второй уровень, не должен измениться при дочернем селекторе</li>
+            </ul>
+        </li>
+        <li>Первый уровень - изменится</li>
+    </ul>
+
+    <section>
+        <h1 id = "first_head">Некий заголовок h1</h1>
+        <h2> Сестринский элемент верзнему заголовку с измененным стилем</h2>
+    </section>
+
+    <section>
+        <p>
+            <span id = "quote_top">Это цитата великих деятелнй нашего времени </span>
+            <br>
+            <br>
+            <span> Чтобы сделать несколько элементов жирными - нужно использовать Селектор обобщенных родственных элементов</span>
+            <br>
+            <br>
+            <span> Для этого в css используется <noscript>Селектор1 ~ Селектор2 { описание }</noscript> синтаксис</span>
+            <br>
+            <br>
+            <span>Пример <noscript>h1 ~ p { text-indent: 20px; }</noscript></span>
+        </p>
+    </section>
+</main>
+<footer></footer>
+</body>
+</html>
